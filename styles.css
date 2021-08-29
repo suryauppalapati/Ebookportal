@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-color:#6d6a6a;
+}
+
+
+
+.left-sidebar{
+    height:580px;
+}
+
+.list-group-item{
+    background-color: rgb(24, 23, 23);
+    color: blanchedalmond;
+    padding: 20px 50px 20px 50px
+}
+
+.navbar-expand-lg{
+    background-color: rgb(24, 23, 23);
+    text-decoration: none;
+}
+
+.nav-item{
+    
+    color: blanchedalmond;
+}
+
+img{
+    height: 348px;
+    width: 40px;
+    margin-bottom: 2px;
+}
+
+.card-trendng{
+    margin-left: 65px;
+    margin-top: 5px;
+}
+
+.nav-logo-item {
+    font-family:'Bebas Neue', cursive;
+    font-size:x-large;
+    color : salmon;
+}
+
+h5{
+    font-family:'Bebas Neue', cursive;
+    font-size:x-large;
+    color : cornsilk;
+    margin-top: -5PX;
+}
+.trending{
+    margin-top: 2px;
+        animation-name: blinker;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        color: #230000
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+   }
