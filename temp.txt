@@ -1,0 +1,18 @@
+const Splitter = () => {
+                        let listView = [];
+                        for(let item of results.Items){
+                            if(item.domainName.includes(',')){
+                               let splittedDomainNames =  item.domainName.split(',')
+                                console.log(splittedDomainNames)
+                                for(let splittedItem of splittedDomainNames){ 
+                                   let refinedData = item;
+                                   refinedData.domainName = splittedItem; 
+                                   listView.push(refinedData)
+                                }
+                            }
+                            else listView.push(item)
+                        }
+                        // console.log(listView)
+                        res.send(listView);
+                    }
+               Splitter();
